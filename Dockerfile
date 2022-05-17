@@ -12,7 +12,7 @@ RUN npm install -D
 # Copy over rest of the project files
 COPY . .
 
-RUN npm run dev
+RUN npm run build
 
 ###
 # Only copy over the Node pieces we need
@@ -20,14 +20,13 @@ RUN npm run dev
 FROM node:14.16.1
 
 WORKDIR /app
-COPY --from=build /app/build ./build
 COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/.svelte-kit /.svelte-kit
+COPY --from=build /app/build ./build
 COPY package.json .
 
 # Set the port env
 ENV PORT=3049
 
 EXPOSE 3049
-CMD ["node", "./build/index.js"]
+CMD ["node", "build/index.js"]
 
