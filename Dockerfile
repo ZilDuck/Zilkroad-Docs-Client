@@ -12,7 +12,7 @@ RUN npm install -D
 # Copy over rest of the project files
 COPY . .
 
-RUN npm run dev
+RUN npm run build
 
 ###
 # Only copy over the Node pieces we need
