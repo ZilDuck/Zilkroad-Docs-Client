@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 import { kitDocsPlugin } from '@svelteness/kit-docs/node';
 import Icons from 'unplugin-icons/vite';
 
@@ -7,7 +7,11 @@ const config = {
   extensions: ['.svelte', '.md'],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter(
+      {
+        out: "build"
+      }
+    ),
 
     prerender: {
       default: true,

@@ -20,14 +20,13 @@ RUN npm run build
 FROM node:14.16.1
 
 WORKDIR /app
-COPY --from=build /app/build ./build
 COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/.svelte-kit /.svelte-kit
+COPY --from=build /app/build ./build
 COPY package.json .
 
 # Set the port env
 ENV PORT=3049
 
 EXPOSE 3049
-CMD ["node", "./build/index.js"]
+CMD ["node", "build/index.js"]
 
