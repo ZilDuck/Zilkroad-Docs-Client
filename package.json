@@ -16,7 +16,7 @@
   "devDependencies": {
     "@iconify-json/ri": "^1.1.1",
     "@playwright/test": "^1.21.0",
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-node": "next",
     "@sveltejs/kit": "next",
     "@svelteness/kit-docs": "^0.22.11",
     "@types/cookie": "^0.4.1",
