@@ -17,7 +17,8 @@
   import '@svelteness/kit-docs/client/styles/vars.css';
 
   import { page } from '$app/stores';
-  import SvelteLogo from '$img/svelte-horizontal.svg?raw';
+  import LogoLight from '$img/logo-light.svg?raw';
+  import LogoDark from '$img/logo-dark.svg?raw';
 
   import {
     Button,
@@ -45,6 +46,7 @@
   $: description = meta?.description;
 </script>
 
+
 <svelte:head>
   {#key $page.url.pathname}
     {#if title}
@@ -60,7 +62,7 @@
   <KitDocsLayout {navbar} {sidebar}>
     <div class="logo" slot="navbar-left">
       <Button href="/">
-        {@html SvelteLogo}
+        {@html LogoLight}
       </Button>
     </div>
 
