@@ -7,11 +7,11 @@ import { Algolia } from '@svelteness/kit-docs/client/algolia';
 </script>
 
 <Algolia
-apiKey="599cec31baffa4868cae4e79f180729b"
-appId="R2IYF7ETH7"
-indexName="docsearch"
-placeholder="Search documentation"
-slot="search"
+    apiKey="54f044bd245de2fdb68c4160e954e2a8"
+    appId="O8DLGV1DG9"
+    indexName="testnet-zilkroad"
+    placeholder="Search documentation"
+    slot="search"
 />
 
 <slot />
