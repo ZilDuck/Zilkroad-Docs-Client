@@ -42,7 +42,7 @@
   const { activeCategory } = createSidebarContext(sidebar);
 
   $: category = $activeCategory ? `${$activeCategory}: ` : '';
-  $: title = meta ? `${category}${meta.title} | KitDocs` : null;
+  $: title = meta ? `${category}${meta.title} | Zilkroad` : null;
   $: description = meta?.description;
 </script>
 
