@@ -3,7 +3,7 @@
 
   export const load = createKitDocsLoader({
     sidebar: {
-      '/': null,
+      '/': '/docs',
       '/docs': '/docs',
     },
   });
