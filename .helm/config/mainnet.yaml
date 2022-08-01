@@ -1,0 +1,3 @@
+ingress.host: docs.zilkroad.io
+
+replicas: 2
