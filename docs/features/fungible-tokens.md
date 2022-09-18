@@ -1,6 +1,11 @@
 ---
-title: Fungible token support
-description: Fungible tokens that are able to be traded on Zilkroad
+lang: en-US
+title: Fungible tokens
+meta:
+  - name: description
+    content: Fungible tokens that are able to be traded on Zilkroad
+  - name: keywords
+    content: Zilkroad Fungible Tokens ZRC-2 Zilliqa
 ---
 
 ## Fungible Tokens

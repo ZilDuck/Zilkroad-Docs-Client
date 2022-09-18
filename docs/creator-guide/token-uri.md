@@ -1,6 +1,11 @@
 ---
-title: Beginner - token_uri
-description: How to mint a token
+lang: en-US
+title: token_uri
+meta:
+  - name: description
+    content: How to mint a token using token_uri
+  - name: keywords
+    content: Zilkroad Creator Guide token_uri Zilliqa
 ---
 
 ## Step 3 - Minting with token_uri

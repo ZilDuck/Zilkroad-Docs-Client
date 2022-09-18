@@ -1,9 +1,14 @@
 ---
-title: NFT Launchpad
-description: How do I get listed on the launchpad?
+lang: en-US
+title: Primary Sales / Launchpad
+meta:
+  - name: description
+    content: Do your inital mint offering using the Zilkroad UI
+  - name: keywords
+    content: Zilkroad Primary Sales Inital Mint Offering Zilliqa
 ---
 
-## What is a  Launchpad?
+## What is a Launchpad?
 
 Launchpads are the function of selling NFTs from an initial minting process, typically via a project's website.
 

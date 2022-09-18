@@ -1,6 +1,11 @@
 ---
-title: Project level metadata
-description: How project level metadata works
+lang: en-US
+title: Project-Level metadata
+meta:
+  - name: description
+    content: How to present optional fields for your nft contract
+  - name: keywords
+    content: Zilkroad Creator Guide project level metadata base_uri Zilliqa
 ---
 
 ## Step 4 - Project level metadata
@@ -31,6 +36,4 @@ You can extend this schema with the following fields to augment your collection 
 }
 ```
 
-:::admonition type="tip"
 Your collection is now ready to be listed!
-:::

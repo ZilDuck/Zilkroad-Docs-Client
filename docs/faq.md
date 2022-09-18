@@ -1,8 +1,11 @@
 ---
-description: Check our frequently asked questions
+title: Frequently Asked Questions
+meta:
+  - name: description
+    content: Check our frequently asked questions for Zilkroad
+  - name: keywords
+    content: Zilkroad FAQ Zilliqa
 ---
-
-# Frequently Asked Questions
 
 ## What is Zilkroad?
 
@@ -40,9 +43,9 @@ However native ZIL can be tokenised as a ZRC-2 token in a 1:1 ratio called 'Wrap
   <img width="200" height="200" src="/img/introduction/wzil_wrapper.png">
 </p>
 
-:::admonition type="tip"
+!!! tip Wrapped Zil
 You can wrap ZIL into WZIL and unwrap WZIL into ZIL via the wrapper interface.
-:::
+!!!
 
 ## How do I know if my NFT has sold?
 
@@ -76,9 +79,9 @@ Buy ZIL on an exchange like Binance, Coinbase or FTX and send it to your wallet'
 
 Once you've topped up your wallet with funds, connect your wallet to Zilkroad by clicking the 'Connect Wallet' button in the upper right corner, you're then ready to start trading on Zilkroad.
 
-:::admonition type="tip"
+!!! tip web3 security
 If this is your first time experiencing web3 and NFT's, welcome! Please take a moment to read up on good security practices for you and your new wallet, else risk all the funds on it! Beware.
-:::
+!!!
 
 ## Is there a listing fee?
 
@@ -98,13 +101,13 @@ Zilkroad has **no** control over how this fee is set and we respect the royalty 
 
 The higher the royalty, the less a seller will get on final purchase and the less likely they are to make a profit and the less volume your project will overall likely have.
 
-:::admonition type="tip"
+!!! tip Sensible royalty
 If you are a **creator or developer** set a sensible royalty between 0-15%. Do not change this without your communities consensus.
 :::
 
-:::admonition type="danger"
+!!! warning Royalty changing
 If you are a **buyer or seller** beware of the projects ability to change the royalty.
-:::
+!!!
 
 ## How do I know how much royalty I will pay?
 

@@ -1,27 +1,34 @@
-const { description } = require('../../package')
+let ogprefix = 'og: http://ogp.me/ns#'
+let title = 'Zilkroad Docs'
+let description = 'Zilliqa NFT Marketplace Documentation'
+let color = '#ffffff'
+let author = 'Zilkroad'
+let url = `docs.zilkroad.io`
+let image =  `/zilkroad-banner.png`
+let favi = '/zilkroad-logo.png'
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Zilkroad Docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: `Zilliqa NFT Marketplace Documentation`,
 
   locales: {
     // The key is the path for the locale to be nested under.
     // As a special case, the default locale can use '/' as its path.
     '/': {
       lang: 'en-US', // this will be set as the lang attribute on <html>
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+      title: 'Zilkroad Docs',
+      description: `Zilliqa NFT Marketplace Documentation`,
     },
-    '/zh/': {
+    '/lang/zh/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器'
+      title: 'Zilkroad Docs',
+      description: `Zilliqa NFT Marketplace Documentation 驱动的静态网站生成器`
     }
   },
 
@@ -29,11 +36,25 @@ module.exports = {
    * Extra tags to be injected to the page HTML `<head>`
    *
    * ref：https://v1.vuepress.vuejs.org/config/#head
+   * 
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: favi }],
+    // https://gist.github.com/MartinMuzatko/cc86b3f168630c05978d65c36169b129 
+    ['meta', { name: 'theme-color', content: color }],
+    ['meta', { prefix: ogprefix, property: 'og:title', content: title }],
+    ['meta', { prefix: ogprefix, property: 'twitter:title', content: title }],
+    ['meta', { prefix: ogprefix, property: 'og:type', content: 'article' }],
+    ['meta', { prefix: ogprefix, property: 'og:url', content: url }],
+    ['meta', { prefix: ogprefix, property: 'og:description', content: description }],
+    ['meta', { prefix: ogprefix, property: 'og:image', content: image }],
+    ['meta', { prefix: ogprefix, property: 'og:article:author', content: author }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: `/assets/apple-touch-icon.png` }],
+    ['link', { rel: 'mask-icon', href: '/assets/safari-pinned-tab.svg', color: color }],
+    ['meta', { name: 'msapplication-TileImage', content: image}],
+    ['meta', { name: 'msapplication-TileColor', content: color }],
   ],
 
   /**
@@ -42,37 +63,13 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: 'Zilkroad',
-        link: 'https://zilkroad.io',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    },
+    sidebarDepth: 1,
     locales: {
       '/': {
         // text for the language dropdown
@@ -93,16 +90,17 @@ module.exports = {
         // algolia docsearch options for current locale
         algolia: {},
         nav: [
-          { text: 'Zilkroad', link: 'https://zilkroad.io' , ariaLabel: 'Nested' }
+          { text: 'Zilkroad', link: 'https://zilkroad.io' , ariaLabel: 'Nested' },
+          { text: 'Discord', link: 'https://discord.gg/qK2CsMuAQy' , ariaLabel: 'Nested' }
         ],
         sidebar: [
           {
             title: 'Welcome',   
-            path: '/welcome/',      
+            path: '/',      
             sidebarDepth: 1,    
             children: [
-              `/welcome/`,
-              `/welcome/faq`
+              `/`,
+              `/faq`
             ]
           },
           {
@@ -124,24 +122,22 @@ module.exports = {
             ]
           },
           {
-            title: 'Buyer/Seller Guide',   
-            path: '/buyer-seller-guide/',      
-            sidebarDepth: 1,    
-            children: [
-              `/`,
-              `/buyer-seller-guide/buyer-guide`,
-              `/buyer-seller-guide/seller-guide`,
-            ]
-          },
-          {
             title: 'Creator Guide',   
             path: '/creator-guide/',      
             sidebarDepth: 1,    
             children: [
-              `/`,
+              `/creator-guide/`,
               `/creator-guide/base-uri`,
               `/creator-guide/token-uri`,
               `/creator-guide/project-level-metadata`,
+            ]
+          },
+          {
+            title: 'Buyer/Seller Guide',   
+            path: '/buyer-seller-guide/',      
+            sidebarDepth: 1,    
+            children: [
+              `/buyer-seller-guide/`,
             ]
           },
           {
@@ -149,15 +145,14 @@ module.exports = {
             path: '/ecosystem-guide/',      
             sidebarDepth: 1,    
             children: [
-              `/`,
-              `/ecosystem-guide/intergration`
+              `/ecosystem-guide/`,
             ]
           },
         ]
       },
 
       /* MULTI LANG SITE CONSTANTS */
-      '/zh/': {
+      '/lang/zh/': {
         selectText: '选择语言',
         label: '简体中文',
         editLinkText: '在 GitHub 上编辑此页',
@@ -170,10 +165,13 @@ module.exports = {
         nav: [
           { text: '嵌套', link: '/zh/nested/' }
         ],
-        algolia: {},
+        algolia: {
+          apiKey: '54f044bd245de2fdb68c4160e954e2a8',
+          indexName: 'testnet-zilkroad',
+          appId: 'O8DLGV1DG9',
+        },
         sidebar: {
-          '/zh/': [/* ... */],
-          '/zh/nested/': [/* ... */]
+          '/lang/zh/': [/* ... */]
         }
       }
     }

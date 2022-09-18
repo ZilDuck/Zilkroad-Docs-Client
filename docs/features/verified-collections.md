@@ -1,11 +1,16 @@
 ---
-title: Verified collections
-description: How to get a verified collection
+lang: en-US
+title: Verified Collections
+meta:
+  - name: description
+    content: A verified collection is deemed non-malicious by the general community sentiment and Zilkroad staff.
+  - name: keywords
+    content: Zilkroad verified collection NFT Zilliqa
 ---
 
 ## Verification
 
-A blue checkmark on a collection means that the collection and curator has been deemed non-malicious by the general community sentiment and Zilkroad.
+A blue checkmark on a collection means that the collection and curator has been deemed non-malicious by the general community sentiment and Zilkroad staff.
 
 ### What does having a verified mean?
 

@@ -1,9 +1,14 @@
 ---
+lang: en-US
 title: Advertising
-description: How advertising works on Zilkroad
+meta:
+  - name: description
+    content: Zilkroad Advertising
+  - name: keywords
+    content: Zilkroad Advertising Zilliqa
 ---
 
-## Advertising
+## Advertising banner
 
 There is an advertising banner which appears on most pages and has a lot of real estate to advertise with.
 

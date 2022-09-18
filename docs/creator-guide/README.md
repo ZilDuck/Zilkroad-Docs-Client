@@ -1,6 +1,11 @@
 ---
+lang: en-US
 title: Creator Guide
-description: How to create an NFT contract
+meta:
+  - name: description
+    content: How to create an NFT contract
+  - name: keywords
+    content: Zilkroad Creator Guide how to create NFT Zilliqa
 ---
 
 ## Creator Guide
@@ -50,9 +55,9 @@ The symbol of your NFT contract representing the entire digital collection.
 
 ## Step 2 - Metadata introduction
 
-:::admonition type="tip"
+!!! tip NFT image inside metadata
 Don't upload your image directly as the image resource - create metadata!
-:::
+!!!
 
 Once we have deployed a ZRC-6 NFT contract to the chain, we will want to start minting tokens!
 
@@ -88,7 +93,15 @@ Please read the ZRC-7 metadata specification for more information on rules relat
 }
 ```
 
-## [Easy Mode] token_uri
+## Step 3a - token_uri
+
+!!! success SUCCESS Best practices
+If using token_uri then IPFS as the resource hosting is considered best practice.
+!!!
+
+!!! note Testing Notes
+Good Note
+!!!
 
 A token_uri is a 1-1 mapping between a particular token and a particular asset. The token_uri can hold the metadata for a token, but this can never be changed once set.
 
@@ -101,7 +114,7 @@ If your digital assets are immutable and are unlikely to change, then using the 
 
 ![image](/img/developer-guide/mint-call.png)
 
-## [Configurable Mode] base_uri
+## Step 3 - base_uri
 
 The advantages of using a base_uri pattern is that the data is not being held on-chain, but instead by some centralised API the developer controls.This means that the developer has control over what data is presented by the API.
 

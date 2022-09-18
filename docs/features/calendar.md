@@ -1,6 +1,11 @@
 ---
-title: Community calendar
-description: How do I get listed on the community calender
+lang: en-US
+title: Calendar
+meta:
+  - name: description
+    content: Zilkroad Community Calendar
+  - name: keywords
+    content: Zilkroad Community Calendar Zilliqa
 ---
 
 ## Community calendar

@@ -1,6 +1,11 @@
 ---
-title: Leaderboards
-description: What are leaderboards?
+lang: en-US
+title: User Activity
+meta:
+  - name: description
+    content: Sitewide Activity
+  - name: keywords
+    content: Zilkroad activity features Zilliqa 
 ---
 
 ## What are leaderboards?

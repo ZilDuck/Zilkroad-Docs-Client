@@ -1,6 +1,11 @@
 ---
-title: Advanced - base_uri
-description: How to mint a token
+lang: en-US
+title: base_uri
+meta:
+  - name: description
+    content: How to mint a token using base_uri
+  - name: keywords
+    content: Zilkroad Creator Guide how to create NFT Zilliqa
 ---
 
 ## Step 3 - Minting with base_uri

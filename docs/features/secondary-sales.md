@@ -1,6 +1,11 @@
 ---
-title: Secondary sales
-description: How do I buy and sell tokens on Zilkroad
+lang: en-US
+title: Secondary Sales
+meta:
+  - name: description
+    content: Buying and Selling NFTs that have already been minted
+  - name: keywords
+    content: Zilkroad Buy Sell NFT Non-Fungible Tokens Zilliqa
 ---
 
 ## Secondary sales

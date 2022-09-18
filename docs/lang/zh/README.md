@@ -1,4 +1,14 @@
-# Chinese Intro
+---
+lang: zh-CN
+title: Chinese Introduction
+meta:
+  - name: description
+    content: How to buy a token on Zilkroad
+  - name: keywords
+    content: Zilkroad how to buy a token Zilliqa
+---
+
+## Chinese introduction
 
 VuePress is composed of two parts: a [minimalistic static site generator](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/core) with a Vue-powered [theming system](https://v1.vuepress.vuejs.org/theme/) and [Plugin API](https://v1.vuepress.vuejs.org/plugin/), and a [default theme](https://v1.vuepress.vuejs.org/theme/default-theme-config.html) optimized for writing technical documentation. It was created to support the documentation needs of Vue's own sub projects.
 

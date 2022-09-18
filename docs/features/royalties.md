@@ -1,6 +1,11 @@
 ---
+lang: en-US
 title: Royalties
-description: How you earn royalties through Zilkroad
+meta:
+  - name: description
+    content: How to earn royalties on Zilkroad and why you should care as a creator!
+  - name: keywords
+    content: Zilkroad Royalties Earning Tokens Zilliqa
 ---
 
 ## Royalties
@@ -27,11 +32,11 @@ If an NFT was listed for 100 WZIL and the royalty was 1000 bps (10%)
 
 (100 WZIL - 10% = 10 WZIL) would be sent to the royalty recipient automatically as part of the sale, the remaining funds (90 WZIL) would be sent to the lister of the item.
 
-:::admonition type="tip"
+!!! tip Royalty amount
 The royalty amount for each contract can be found on the collection page.
 
 The royalty is also shown on the buying modal before purchasing.
-:::
+!!!
 
 ### How do I get royalties?
 

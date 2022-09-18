@@ -1,6 +1,11 @@
 ---
-title: Report scams
-description: How do I report a scam?
+lang: en-US
+title: Report Scams
+meta:
+  - name: description
+    content: Report malcious contracts to our team!
+  - name: keywords
+    content: Zilkroad Report Scams Zilliqa
 ---
 
 ## Report scams

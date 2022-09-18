@@ -1,11 +1,16 @@
 ---
-title: Non-fungible support
-description: NFTs on Zilkroad
+lang: en-US
+title: Non-Fungible tokens
+meta:
+  - name: description
+    content: Non-Fungible tokens
+  - name: keywords
+    content: Zilkroad Non-Fungible Tokens ZRC-1 ZRC-6 NFT Zilliqa
 ---
 
 ## Non-fungible Tokens
 
-Non-fungible tokens are also known as ZRC-1's or ZRC-6's -  as these are the standards which defines the non-fungible token contracts.
+Non-fungible tokens are also known as their contract names, ZRC-1 or ZRC-6.
 
 ZRC-1 is an older legacy standard which is not supported to be traded on Zilkroad. ZRC-1s are able to be viewed on your wallet page, but they cannot be listed.
 
