@@ -16,7 +16,7 @@ Please familiarise yourself with the two examples for [writing state to chain](h
 
 The below examples follow on from this inital knowledge.
 
-## Contract Addresses
+## Contract addresses
 
 | Contract Name    | Network    | Contract Address                           |
 |------------------|------------|--------------------------------------------|
@@ -26,6 +26,8 @@ The below examples follow on from this inital knowledge.
 | Marketplace      | Testnet    | 0xB4FA69997f7560fe48F375b03F73B8774cB3BF5A |
 | NFT Escrow       | Testnet    | 0x8e7358f356fda73d450aed70dab7a93708b75650 |
 | Launchpad Escrow | Testnet    | 0x3dad9ad08d87da1a2cc9a21578f5abb7023164fc |
+
+## Code examples
 
 ### Listing an NFT
 

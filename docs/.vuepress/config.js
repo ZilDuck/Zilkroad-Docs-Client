@@ -7,7 +7,9 @@ let url = `docs.zilkroad.io`
 let image =  `/zilkroad-banner.png`
 let favi = '/zilkroad-logo.png'
 
+
 module.exports = {
+  theme: 'antdocs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
