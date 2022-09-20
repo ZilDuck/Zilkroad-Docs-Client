@@ -10,7 +10,9 @@
   "repository": "/Zilkroad-Docs-Client",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "docker:build" : "docker build -t zilkroad-docs-client .",
+    "docker:run" : "docker run  -dp 8080:8080 zilkroad-docs-client"
   },
   "license": "MIT",
   "devDependencies": {

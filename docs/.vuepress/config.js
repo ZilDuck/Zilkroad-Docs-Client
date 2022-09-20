@@ -108,7 +108,6 @@ module.exports = {
             path: '/features/',      
             sidebarDepth: 1,    
             children: [
-              `/features/`,
               `/features/adverts`,
               `/features/calendar`,
               `/features/fungible-tokens`,
@@ -126,7 +125,6 @@ module.exports = {
             path: '/creator-guide/',      
             sidebarDepth: 1,    
             children: [
-              `/creator-guide/`,
               `/creator-guide/base-uri`,
               `/creator-guide/token-uri`,
               `/creator-guide/project-level-metadata`,

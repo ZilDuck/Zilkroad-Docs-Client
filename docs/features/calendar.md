@@ -30,4 +30,4 @@ Please contact hello@zilkroad.io with the subject line \[Community calendar\] wi
 * An external link if applicable
 * An image of the event hosted on IPFS
 
-There is a **setup fee** of 2000 ZIL if your application is successful.
+There is a **setup fee** of 2500 ZIL if your application is successful.

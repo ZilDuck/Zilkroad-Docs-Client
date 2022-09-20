@@ -20,6 +20,9 @@ The below examples follow on from this inital knowledge.
 
 | Contract Name    | Network    | Contract Address                           |
 |------------------|------------|--------------------------------------------|
+| Marketplace      | Mainnet    |                                            |
+| NFT Escrow       | Mainnet    |                                            |
+| Launchpad Escrow | Mainnet    |                                            |
 | Marketplace      | Testnet    | 0xB4FA69997f7560fe48F375b03F73B8774cB3BF5A |
 | NFT Escrow       | Testnet    | 0x8e7358f356fda73d450aed70dab7a93708b75650 |
 | Launchpad Escrow | Testnet    | 0x3dad9ad08d87da1a2cc9a21578f5abb7023164fc |
@@ -62,7 +65,7 @@ const callTx = await deployedContract.callWithoutConfirm
 );
 ```
 
-  ### Return an NFT
+### Return an NFT
 
 ```js
 const callTx = await deployedContract.callWithoutConfirm
@@ -106,4 +109,72 @@ const callTx = await deployedContract.callWithoutConfirm
     },
     false,
 );
+```
+
+### Edit an existing order
+
+```js
+const callTx = await deployedContract.callWithoutConfirm
+(
+    'UserEditListingPrice',
+    [
+      {
+        vname: 'oid',
+        type: 'Uint256',
+        value: orderId
+      },
+      {
+        vname: 'new_fungible',
+        type: 'ByStr20',
+        value: newFungile
+      },
+      {
+        vname: 'new_sell_price',
+        type: 'Uint128',
+        value: fungibleSellPrice
+      },
+    ],
+    {
+        version: VERSION,
+        amount: new BN(0),
+        gasPrice: myGasPrice,
+        gasLimit: Long.fromNumber(8000),
+    },
+    false,
+);
+```
+
+### Fetch state
+
+```js
+const { Zilliqa } = require('@zilliqa-js/zilliqa');
+const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
+ 
+async function FetchState() 
+{
+    const zilkroadMarketplace = 'a4463b8d05eecd52249521e3d33447b0dceb17fb'
+    const mapKey = 'listing_map'
+    const searchValue = '0xb718e21c50ac5b26c82d22008bf19a3cd2c36583'
+
+    const stateFetch = await zilliqa.blockchain.getSmartContractSubState(
+        zilkroadMarketplace,
+        mapKey
+    );
+
+    for(var order in stateFetch.result.listing_map)
+    {
+        //console.log(JSON.stringify(stateFetch.result.listing_map[index], null, 2))
+        const nftContract = stateFetch.result.listing_map[order].arguments[0].arguments[0]
+        const tokenID = stateFetch.result.listing_map[order].arguments[0].arguments[1]
+        const nftLister = stateFetch.result.listing_map[order].arguments[1].arguments[0]
+        const fungibleContract = stateFetch.result.listing_map[order].arguments[1].arguments[1]
+        const fungibleAmount = stateFetch.result.listing_map[order].arguments[1].arguments[2]
+
+        if(nftLister == searchValue)
+        {
+            console.log(`${searchValue} owns orderID ${order}`)
+        }
+    }
+}
+FetchState()
 ```

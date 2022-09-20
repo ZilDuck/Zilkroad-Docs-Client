@@ -40,9 +40,4 @@ Either (you) the launchpad project wallet or (us) Zilkroad may call to split the
 
 You will be given your proxy contract address on it's creation so that you may call it at your leisure.
 
-You will also need to configure your NFT contract to include the proxy as a Minter so that it is allowed to Mint tokens. If this is not done then your proxy will not be allowed to Mint tokens and complete the sale.
-
-Zilkroad will help create advertising and marketing material around your launch which includes :
-
-* 2 weeks of advertising a banner provided by your project
-* Twitter AMA
+You will also need to configure your NFT contract to include the proxy as a Minter so that it is allowed to Mint tokens. If this is not done then your proxy will not be allowed to Mint tokens and complete the sale. Zilkroad will support your through this process whilst ensuring you have full control over the contract.

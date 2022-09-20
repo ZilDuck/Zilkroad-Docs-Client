@@ -36,4 +36,4 @@ To qualify for a token review, you must have at least 1 million ZIL in liquidity
 
 Please contact hello@zilkroad.io with the subject line \[ZRC-2 approval\] and provide some details about you and your token. We will create advertising and marketing material around your launch.
 
-There is a one time **setup fee** of 10,000 USD if your application is successful.
+There is a one time **setup fee** of 15,000 USD if your application is successful.

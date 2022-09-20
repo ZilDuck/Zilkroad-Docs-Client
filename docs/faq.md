@@ -9,27 +9,31 @@ meta:
 
 ## What is Zilkroad?
 
-Zilkroad is an NFT marketplace built on the Zilliqa blockchain, Decentralised and permissionless - allowing anyone to buy or sell Zilliqa-based NFTs.
+Zilkroad is an NFT marketplace built on the Zilliqa blockchain. Decentralised and permissionless - we allow anyone to buy or sell Zilliqa-based NFTs through our bespoke UI and smart contracts.
 
-Zilkroad aims to help promote artists and creators by providing them with a trustless marketplace to share, sell and aquire royalty through sales of their art.
+Zilkroad aims to help promote artists and creators by providing them with a trustless marketplace to share, sell and aquire royalty through sales of their art. In the future we will develop functionality to deploy, mint and manage ZRC-6 contracts.
+
+Zilkroad has recieved no investments made to it by any entity. Zilkroad was created by the Duck team through their sales and royalty - to benefit the whole ecosystem rather than just one project. The project from inital analysis to MVP release has taken just over 1 year.
 
 ## Secondary Sales
 
-When it comes to selling NFTs you already own, once you've placed the order, it is stored in the marketplace contract and your NFT is moved to a custodial smart contract storage.
+When it comes to selling NFTs you already own, once you've placed an order; it is moved and stored in the marketplace custodial contract.
 
-When someone buys your NFT, the marketplace transfers the correct amount of funds to the lister and royalty recipient from the buyer and the escrowed artwork you listed to the buyer. At this point, the sale is marked as complete and could be fulfilled when you're not at your computer.
+When someone buys your NFT, the marketplace transfers the correct amount of funds to both the lister and royalty recipient, and releases the NFT from escrow to the buyer. At this stage, the sale is marked as complete in the smart contract.
+
+You can at any point cancel the listing and get back your NFT, providing the transaction hasn't been marked as sold.
+
+Equally, you can also edit and change the token or amount before the listing is sold, without having to delist and relist your NFT.
 
 The statistics of the buyer, seller, royalty recipient and collection are all updated to reflect this sale, so check your profile page's activity status to see historical activity for your listings.
-
-You can at any point cancel the listing and get back your NFT, providing the transaction hasn't been marked as complete (sold). Equally, you can also change the token and amount before the listing is sold without having to delist and relist your NFT.
 
 ## Primary Sales / Launchpad
 
 Primary sales allows NFT projects the ability to directly mint inistal sales through Zilkroad.
 
-Users have the ability to buy directly from the zilkroad managed sales proxy and receive the NFT directly without leaving the site!
+Users have the ability to buy directly from the Zilkroad managed sales proxy and receive the NFT directly without leaving the site!
 
-Creators have the ability to feature and sell their project directly through zilkroad without needing to setup a website. 
+Creators have the ability to feature and sell their project directly through Zilkroad without needing to setup a website.
 
 Read more about [Primary Sales / Launchpad](../features/primary-sales-launchpad.md).
 
@@ -37,15 +41,19 @@ Read more about [Primary Sales / Launchpad](../features/primary-sales-launchpad.
 
 Zilkroad only supports ZRC-2 to be traded on the platform.
 
-However native ZIL can be tokenised as a ZRC-2 token in a 1:1 ratio called 'Wrapped Zilliqa' or WZIL. WZIL can be unwrapped back into native ZIL.
+However, native ZIL can be tokenised as a ZRC-2 token in a 1:1 ratio called 'Wrapped Zilliqa' or WZIL. WZIL can be unwrapped back into native ZIL.
+
+If you want to sell in ZIL, then you need to accept WZIL as a payment and then unwrap the funds once your NFT is sold.
+
+If you want to buy in ZIL, then you need to wrap some ZIL to WZIL before you submit a trade.
+
+Zilkroad suggests trading in WZIL as there is more liquidity from potential buyers.
 
 <p align="center">
   <img width="200" height="200" src="/img/introduction/wzil_wrapper.png">
 </p>
 
-!!! tip Wrapped Zil
 You can wrap ZIL into WZIL and unwrap WZIL into ZIL via the wrapper interface.
-!!!
 
 ## How do I know if my NFT has sold?
 
@@ -53,13 +61,13 @@ On your profile page, there is an accounts historical activity which details the
 
 The different types of activity rows that are tracked are:
 
-* Listed a token
-* Bought a token
-* Edited a tokens price
-* Sold a token
-* Delist a token
-* Recieved royalties
-* Admin delisted a token
+* When you list a token for sale
+* When you buy a token that's for sale
+* When you edit a tokens price that you've previously listed
+* When you sell a token
+* When you delisted a token
+* When you recieve royalties from a collection you own
+* When the admin delists your token for upgrading smart contract purposes
 
 <p align="center">
   <img width="700" height="700" src="/img/introduction/sold_row.png">
@@ -73,21 +81,19 @@ NFT's can be delisted prior to sale if it has not sold.
 
 ## How do I get started on Zilkroad?
 
+If this is your first time experiencing web3 and NFT's, welcome! Please take a moment to read up on good security practices for you and your new wallet, else risk all the funds on it! Beware.
+
 First, you have to create a Zilliqa wallet, via ZilPay. Download the wallet extensions for your browser (and keep your secret phrase safe and secure, never share this with anyone!)
 
 Buy ZIL on an exchange like Binance, Coinbase or FTX and send it to your wallet's public address. Consider sending a small amount first to ensure the funds arrive.
 
 Once you've topped up your wallet with funds, connect your wallet to Zilkroad by clicking the 'Connect Wallet' button in the upper right corner, you're then ready to start trading on Zilkroad.
 
-!!! tip web3 security
-If this is your first time experiencing web3 and NFT's, welcome! Please take a moment to read up on good security practices for you and your new wallet, else risk all the funds on it! Beware.
-!!!
-
 ## Is there a listing fee?
 
 There is currently no listing fee.
 
-This may change in the future, currently zilkroad is dedicated to bootstrapping NFT liquidity on Zilliqa by charging no listing fees.
+This may change in the future, currently Zilkroad is dedicated to bootstrapping NFT liquidity on Zilliqa by charging no listing fees. However to continue development into the future we will need to scale our team.
 
 ## Is there a minimum listing amount for an item?
 
@@ -101,13 +107,9 @@ Zilkroad has **no** control over how this fee is set and we respect the royalty 
 
 The higher the royalty, the less a seller will get on final purchase and the less likely they are to make a profit and the less volume your project will overall likely have.
 
-!!! tip Sensible royalty
 If you are a **creator or developer** set a sensible royalty between 0-15%. Do not change this without your communities consensus.
-:::
 
-!!! warning Royalty changing
-If you are a **buyer or seller** beware of the projects ability to change the royalty.
-!!!
+If you are a **buyer or seller** beware of the projects ability to change the royalty. At sale time, you will have the correct amount of royalty displayed to you.
 
 ## How do I know how much royalty I will pay?
 
@@ -123,16 +125,15 @@ See the [royalties page](../features/royalties.md) for more details about royalt
 
 The transaction fees on Zilliqa is minimal. However, we encourage users to have at least 10 ZIL in their wallet to ensure that their transaction can be processed.
 
-| Action       | Estimated cost |
-|--------------|----------------|
-| List         | 5 ZIL          |
-| Buy          | 8 ZIL          |
-| Delist       | 4 ZIL          |
-| Change Price | 4 ZIL          |
+| Action          | Estimated cost |
+|-----------------|----------------|
+| List            | 5 ZIL          |
+| Buy             | 8 ZIL          |
+| Delist          | 4 ZIL          |
+| Change Price    | 4 ZIL          |
+| Recieve Royalty | FREE           |
 
 Gas is required to perform your action on the blockchain. If a transaction fails it will consume gas, but no action is taken.
-
-It is recommended to use the default gas price.
 
 ## What is the price floor?
 
@@ -152,7 +153,10 @@ Your profile page.
 
 ## How do people view my listings?
 
-If you listed an NFT it will show up in that contract collection’s page, it will also be viewable as a listing on your profile page.
+If you listed an NFT it will show up in multiple places.
+  * The collections page
+  * A listing on your profile page
+  * Recently listed
 
 Share the link of your listing to prospective buyers via social media!
 
@@ -208,7 +212,7 @@ gZIL, XSGD, WZIL are examples of ZRC-2 tokens.
 
 ## What is WZIL?
 
-Native ZIL can be tokenised into a ZRC-2 token in a 1:1 ratio called 'Wrapped Zilliqa' or WZIL. WZIL can be burnt or unwrapped to return native ZIL.
+Native ZIL can be tokenised into a ZRC-2 token in a 1:1 ratio called 'Wrapped Zilliqa' or WZIL. WZIL can be burnt or unwrapped to return native ZIL. A WZIL/ZIL wrapper can be found after logging in.
 
 ## What is ZRC-6?
 
@@ -234,7 +238,7 @@ The owner will be able to call ```SetRoyaltyRecipient``` with a base 16 Zilliqa 
 
 Contract owners can also set and update the amount of royalties by calling ```SetRoyaltyFeeBPS``` with the royalty BPS.
 
-Royalties are automatically sent as part of the sale. When zilkroad processes a sale, the royalty tax amount is read from the NFT contract being traded, with the amount of tokens used for the inital order, the royalty can be calculated and then sent to the royalty recipient.
+Royalties are automatically sent as part of the sale. When Zilkroad processes a sale, the royalty tax amount is read from the NFT contract being traded, with the amount of tokens used for the inital order, the royalty can be calculated and then sent to the royalty recipient.
 
 Your profile page will track the total amount of royalties earnt and each royalty transaction.
 

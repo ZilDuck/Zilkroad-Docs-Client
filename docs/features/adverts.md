@@ -10,7 +10,7 @@ meta:
 
 ## Advertising banner
 
-There is an advertising banner which appears on most pages and has a lot of real estate to advertise with.
+There is an advertising banner which appears on most pages.
 
 Please contact hello@zilkroad.io with the subject line \[Banner advertising\] with :
 
@@ -21,9 +21,7 @@ Please contact hello@zilkroad.io with the subject line \[Banner advertising\] wi
 
 | Duration   | Cost     |
 |------------|----------|
-| 3 days     | 2000 ZIL |
-| 1 week     | 3000 ZIL |
-| 2 week     | 5000 ZIL |
+| 1 day      | 750 ZIL  |
 
 If multiple advertisements are scheduled for a day, then they are chosen in a round-robin pattern, equally distributing the views.
 
