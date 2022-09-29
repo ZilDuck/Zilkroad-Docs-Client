@@ -46,6 +46,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: color }],
     ['meta', { prefix: ogprefix, property: 'og:title', content: title }],
     ['meta', { prefix: ogprefix, property: 'twitter:title', content: title }],
+    ['meta', { prefix: ogprefix, property: 'twitter:summary_large_image', content: image }],
     ['meta', { prefix: ogprefix, property: 'og:type', content: 'article' }],
     ['meta', { prefix: ogprefix, property: 'og:url', content: url }],
     ['meta', { prefix: ogprefix, property: 'og:description', content: description }],

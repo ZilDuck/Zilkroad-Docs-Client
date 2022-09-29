@@ -146,7 +146,11 @@ const callTx = await deployedContract.callWithoutConfirm
 );
 ```
 
-### Fetch state
+### Fetch all orderIDs from a collection which a user holds
+
+You may want to interact with zilkroad from your own application. Being able to buy, edit or delist requires you knowing the orderID you was given when you listed.
+
+The below query searches the zilkroad listing map where orders have been placed by a users address and returns this orderID as well as the details of the listing.
 
 ```js
 const { Zilliqa } = require('@zilliqa-js/zilliqa');
@@ -180,3 +184,7 @@ async function FetchState()
 }
 FetchState()
 ```
+
+### Fetch all previous sales history for a user
+
+Coming soon...
