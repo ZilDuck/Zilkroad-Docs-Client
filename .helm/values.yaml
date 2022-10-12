@@ -5,8 +5,8 @@ image:
     pullPolicy: IfNotPresent
     pullSecret: aws-registry
 
-port: 3049
-targetPort: 3049
+port: 8080
+targetPort: 8080
 
 namespace: devnet
 
