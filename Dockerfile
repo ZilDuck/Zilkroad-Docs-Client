@@ -7,9 +7,12 @@ RUN npm install -g http-server
 WORKDIR /app
 
 COPY ./package.json ./
-RUN npm i
+
+RUN npm install
 
 COPY . .
 
+RUN npm run build
+
 EXPOSE 8080
-CMD ["npm", "run", "dev"]
+CMD  [ "npm", "run", "dev" ]

@@ -119,7 +119,6 @@ module.exports = {
               `/features/report`,
               `/features/royalties`,
               `/features/secondary-sales`,
-              `/features/user-stats`,
               `/features/verified-collections`,
             ]
           },
