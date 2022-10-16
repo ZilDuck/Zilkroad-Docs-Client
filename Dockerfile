@@ -1,17 +1,9 @@
-FROM node:14.16.1
-
-# install simple http server for serving static content
-RUN npm install -g http-server
-
-# make the 'app' folder the current working directory
+FROM node:14.16.1 as build-stage
 WORKDIR /app
-
-COPY ./package.json ./
-
+COPY package*.json ./
 RUN npm install
-
-COPY . .
-
+COPY ./ .
+EXPOSE 80
 RUN npm run build
 WORKDIR ./docs/.vuepress/dist
 
