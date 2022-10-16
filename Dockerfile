@@ -1,18 +1,13 @@
-FROM node:14.16.1
-
-# install simple http server for serving static content
-RUN npm install -g http-server
-
-# make the 'app' folder the current working directory
+FROM node:14.16.1 as build-stage
 WORKDIR /app
-
-COPY ./package.json ./
-
+COPY package*.json ./
 RUN npm install
-
-COPY . .
-
+COPY ./ .
+EXPOSE 80
 RUN npm run build
 
-EXPOSE 8080
-CMD  [ "npm", "run", "dev" ]
+FROM nginx as production-stage
+RUN mkdir /app
+COPY --from=build-stage /app/dist /app
+COPY nginx.conf /etc/nginx/nginx.conf
+
