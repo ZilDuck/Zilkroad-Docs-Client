@@ -1,9 +1,17 @@
-FROM node:14.16.1 as build-stage
+FROM node:14.16.1
+
+RUN npm install -g http-server
+
 WORKDIR /app
+
 COPY package*.json ./
+
 RUN npm install
-COPY ./ .
-EXPOSE 80
+
+COPY . .
+
+EXPOSE 8080
+
 RUN npm run build
 WORKDIR ./docs/.vuepress/dist
 
