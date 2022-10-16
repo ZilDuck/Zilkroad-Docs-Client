@@ -17,7 +17,7 @@ replicas: 0
 resources:
   limits:
     cpu: 0.1
-    memory: 256M
+    memory: 128M
   requests:
     cpu: 0.1
-    memory: 256M
+    memory: 64M

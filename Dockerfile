@@ -13,6 +13,7 @@ RUN npm install
 COPY . .
 
 RUN npm run build
+WORKDIR ./docs/.vuepress/dist
 
 EXPOSE 8080
-CMD  [ "npm", "run", "dev" ]
+CMD [ "http-server", ".", "-p", "8080" ]
