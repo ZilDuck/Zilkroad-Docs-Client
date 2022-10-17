@@ -1,32 +1,19 @@
-# Our Node base image
-FROM node:14.16.1 as build
-
-# Change our current working directory
-WORKDIR /app
-
-# Copy over `package.json` and lock files to optimize the build process
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-# Install Node modules
-RUN npm install -D
-
-# Copy over rest of the project files
-COPY . .
-
-RUN npm run build
-
-###
-# Only copy over the Node pieces we need
-###
 FROM node:14.16.1
 
+RUN npm install -g http-server
+
 WORKDIR /app
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/build ./build
-COPY package.json .
 
-# Set the port env
-ENV PORT=3049
+COPY package*.json ./
 
-EXPOSE 3049
-CMD ["node", "build/index.js"]
+RUN npm install
 
+COPY . .
+
+EXPOSE 8080
+
+RUN npm run build
+WORKDIR ./docs/.vuepress/dist
+
+EXPOSE 8080
+CMD [ "http-server", ".", "-p", "8080" ]
