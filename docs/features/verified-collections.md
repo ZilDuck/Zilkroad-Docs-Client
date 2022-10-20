@@ -10,11 +10,15 @@ meta:
 
 ## Verification
 
-A blue checkmark on a collection means that the collection and curator has been deemed non-malicious by the general community sentiment and Zilkroad staff.
+A checkmark on a collection means that the collection and curator has been deemed non-malicious by the general community sentiment and Zilkroad staff.
+
+<p align="center">
+  <img height="300" src="/img/features/verification.png">
+</p>
 
 ### What does having a verified mean?
 
-Blue checkmarks are added to collection pages if the public figure controlling the wallet is at risk of impersonation.
+Checkmarks are added to collection pages if the public figure controlling the wallet is at risk of impersonation.
 
 Verification does not mean that Zilkroad endorses these projects.
 

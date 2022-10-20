@@ -10,7 +10,7 @@ meta:
 
 ## Ecosystem integrations
 
-Ecosystem partners may interact with Zilkroad using Zilliqa-js.
+Ecosystem partners may interact with Zilkroad contracts using Zilliqa-js - we actively encourage community growth through using an existing marketplace solution.
 
 Please familiarise yourself with the two examples for [writing state to chain](https://github.com/Zilliqa/Zilliqa-JavaScript-Library-Examples/blob/master/node/callContract.js) and [retrieving state from chain](https://github.com/Zilliqa/Zilliqa-JavaScript-Library-Examples/blob/master/node/queryState.js).
 
@@ -20,14 +20,16 @@ The below examples follow on from this inital knowledge.
 
 | Contract Name    | Network    | Contract Address                           |
 |------------------|------------|--------------------------------------------|
-| Marketplace      | Mainnet    |                                            |
-| NFT Escrow       | Mainnet    |                                            |
-| Launchpad Escrow | Mainnet    |                                            |
-| Marketplace      | Testnet    | 0xB4FA69997f7560fe48F375b03F73B8774cB3BF5A |
+| Marketplace      | Mainnet    | Soon :tm:                                  |
+| NFT Escrow       | Mainnet    | Soon :tm:                                  |
+| Launchpad Escrow | Mainnet    | Soon :tm:                                  |
+| Marketplace      | Testnet    | 0xad43392d1750771e58931801ddc274e5984660b4 |
 | NFT Escrow       | Testnet    | 0x8e7358f356fda73d450aed70dab7a93708b75650 |
 | Launchpad Escrow | Testnet    | 0x3dad9ad08d87da1a2cc9a21578f5abb7023164fc |
 
 ## Code examples
+
+All of the below code examples use the `Marketplace` contract.
 
 ### Listing an NFT
 
@@ -146,6 +148,10 @@ const callTx = await deployedContract.callWithoutConfirm
 );
 ```
 
+### Fetch all NFTs belonging to an address
+
+Please see [Zildexr's API call `GetNFTsOwnedByAddress](http://api-docs.zildexr.com/#get-nfts-owned-by-address)
+
 ### Fetch all orderIDs from a collection which a user holds
 
 You may want to interact with zilkroad from your own application. Being able to buy, edit or delist requires you knowing the orderID you was given when you listed.
@@ -188,3 +194,7 @@ FetchState()
 ### Fetch all previous sales history for a user
 
 Coming soon...
+
+### Get all actions which have occured for a token
+
+Please see [Zildexr's API call `GetNFTsActions`](http://api-docs.zildexr.com/#get-nft-actions)

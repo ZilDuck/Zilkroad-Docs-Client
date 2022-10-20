@@ -8,7 +8,9 @@ meta:
     content: Zilkroad Advertising Zilliqa
 ---
 
-## Advertising banner
+## Banners
+
+### Getting your banner on Zilkroad
 
 There is an advertising banner which appears on most pages.
 
@@ -17,7 +19,10 @@ Please contact hello@zilkroad.io with the subject line \[Banner advertising\] wi
 * Your prospective dates of advertising
 * A JPG/GIF of dimensions '1224px x 420px' and under 1MB in size
 * A JPG/GIF of dimensions '600px x 420px' and under 1MB in size
-* A URL for the banner to link to
+* A title under 50 characters
+* A description under 210 characters
+* A URL for the banner to link (enables vist link button)
+* A ZRC-6 contract for the banner to link (enables vist collection button)
 
 | Duration   | Cost     |
 |------------|----------|
@@ -26,3 +31,11 @@ Please contact hello@zilkroad.io with the subject line \[Banner advertising\] wi
 If multiple advertisements are scheduled for a day, then they are chosen in a round-robin pattern, equally distributing the views.
 
 Advertising prices may change over time.
+
+<p align="center">
+  <img src="/img/features/banner_1.png">
+</p>
+
+<p align="center">
+  <img src="/img/features/banner_2.png">
+</p>

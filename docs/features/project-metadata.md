@@ -1,14 +1,14 @@
 ---
 lang: en-US
-title: Project-Level metadata
+title: Project Metadata
 meta:
   - name: description
-    content: How to present optional fields for your nft contract
+    content: Project Specific Metadata for NFTs
   - name: keywords
-    content: Zilkroad Creator Guide project level metadata base_uri Zilliqa
+    content: Zilkroad Project Specific Metadata ZRC-7
 ---
 
-## Step 4 - Project level metadata
+## Banners
 
 An NFT contract can also expose metadata at the collection level.
 
@@ -24,6 +24,8 @@ ZRC-7 provides a basic schema for how projects should define their metadata.
   "animation_url": "https://animation.example.com/creature"
 }
 ```
+
+You can extend this schema with the following fields to augment your collection on Zilkroad.
 
 Please use `collection_image_url` for the image associated with your NFT contract.
 
