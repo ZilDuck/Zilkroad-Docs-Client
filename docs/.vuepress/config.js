@@ -116,6 +116,7 @@ module.exports = {
               `/features/fungible-tokens`,
               `/features/nft-standard`,
               `/features/primary-sales-launchpad`,
+              `/features/project-metadata`,
               `/features/report`,
               `/features/royalties`,
               `/features/secondary-sales`,

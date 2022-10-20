@@ -50,7 +50,7 @@ If you want to buy in ZIL, then you need to wrap some ZIL to WZIL before you sub
 Zilkroad suggests trading in WZIL as there is more liquidity from potential buyers.
 
 <p align="center">
-  <img width="200" height="200" src="/img/introduction/wzil_wrapper.png">
+  <img src="/img/introduction/wzil_wrapper.png">
 </p>
 
 You can wrap ZIL into WZIL and unwrap WZIL into ZIL via the wrapper interface.
@@ -70,7 +70,7 @@ The different types of activity rows that are tracked are:
 * When the admin delists your token for upgrading smart contract purposes
 
 <p align="center">
-  <img width="700" height="700" src="/img/introduction/sold_row.png">
+  <img src="/img/introduction/sold_row.png">
 </p>
 
 ## Can I get my NFT/funds back after buying/selling?
@@ -91,13 +91,23 @@ Once you've topped up your wallet with funds, connect your wallet to Zilkroad by
 
 ## Is there a listing fee?
 
-There is currently no listing fee.
+There is no listing fee.
 
-This may change in the future, currently Zilkroad is dedicated to bootstrapping NFT liquidity on Zilliqa by charging no listing fees. However to continue development into the future we will need to scale our team.
+## Is there a fee taken on sales?
+
+For a period when Zilkroad is launched, the fee taken will be 0%.
+
+We plan to increase this in the future.
 
 ## Is there a minimum listing amount for an item?
 
 The minimum amount of fungible tokens that can be processed for a sales is 10 units of a token. This is because this is the amount of units required to calculate royalty correctly.
+
+ZIL and WZIL have 12 decimals, so 10 units would be equal to `0.000000000010`.
+
+Duck has 2 decimals, so 10 uints would be equal to `0.10`
+
+See [currently accepted zrc-2's](/features/fungible-tokens.html#currently-accepted-zrc-2) for more infomation.
 
 ## What fees are included in the price of a listed NFT?
 
@@ -116,7 +126,7 @@ If you are a **buyer or seller** beware of the projects ability to change the ro
 When selling, buying or editing the price of an NFT, the current royalty percentage is read and from the token amount input, the total royalties can be determined ahead of time.
 
 <p align="center">
-  <img width="500" height="500" src="/img/introduction/royalties_modal.png">
+  <img src="/img/introduction/royalties_modal.png">
 </p>
 
 See the [royalties page](../features/royalties.md) for more details about royalties.
@@ -243,5 +253,17 @@ Royalties are automatically sent as part of the sale. When Zilkroad processes a 
 Your profile page will track the total amount of royalties earnt and each royalty transaction.
 
 <p align="center">
-  <img width="1000" height="200" src="/img/introduction/royalties_row.jpg">
+  <img src="/img/introduction/royalties_row.png">
 </p>
+
+### I made a ZRC-6 but instead of putting the metadata as the URI, I put the image - help!
+
+You will need to migrate all of your tokens to a new contract which exposes metadata in the URI.
+
+Zilkroad takes a hard stance on not developing client specific fixes for broken contracts - one of the reasons that Zilkroad allows any newly minted token to be sold is because we're able to read this metadata out in a standardised way, not conforming to this standard will mean that your collection potentially won't render correctly.
+
+There are two ways of migrating tokens, either from ZRC-1 or ZRC-6 to a new ZRC-6 contract.
+
+The first way is you just redeploy and remint all of your holders a new token - but this comes with the tradeoff that you have two tokens in circulation at any one time.
+
+The second way is to create an escrow which you mint all of your new correct tokens to and then allow users to burn the old token_id in exchange for the new. See this article in the Scilla Cookbook about [migration contracts.](https://scilla-cookbook.org/tutorials/scilla-tutorials/nft-collection/other-contracts)

@@ -30,9 +30,11 @@ The royalty fee is calculated from the amount of funds being traded.
 
 If an NFT was listed for 100 WZIL and the royalty was 1000 bps (10%)
 
-(100 WZIL - 10% = 10 WZIL) would be sent to the royalty recipient automatically as part of the sale, the remaining funds (90 WZIL) would be sent to the lister of the item.
+`100 WZIL - 10% = 10 WZIL` would be sent to the royalty recipient automatically as part of the sale.
 
-The royalty amount for each contract can be found on the collection page. The royalty is also shown on the buying modal before purchasing.
+Next, 90 WZIL have the marketplace fee applied to it `90 WZIL - 2% = 1.8 WZIL` which is sent to Zilkroad, and the remainder `88.2 WZIL` is sent to the seller.
+
+The royalty and marketplace fee amounts for each nft can be found in the buying or selling modal.
 
 ### How do I get royalties?
 
@@ -40,6 +42,6 @@ If you are the owner of an NFT contract which is actively being traded then you 
 
 Perhaps it's time to [get creating?](../creator-guide/creator-introduction.md)
 
-### Can I change a royalty once a contract is deployed?
+### Can I change the royalty amount or recipient once a contract is deployed?
 
 Yes. There is a function on the NFT which can be called by the current owner to change how much basis points should be sent to the royalty recipient.
