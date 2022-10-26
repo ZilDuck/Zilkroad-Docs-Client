@@ -38,6 +38,7 @@ If your application is successful, Zilkroad will deploy a sales proxy on your be
 
 Either (you) the launchpad project wallet or (us) Zilkroad may call to split the proxy funds and the proxy will be split 80% to the project and 20% to Zilkroad.
 
-You will be given your proxy contract address on it's creation so that you may call it at your leisure.
+You will be given your proxy contract address on it's creation, so that you may call the claim function at your own chosing.
 
-You will also need to configure your NFT contract to include the proxy as a Minter so that it is allowed to Mint tokens. If this is not done then your proxy will not be allowed to Mint tokens and complete the sale. Zilkroad will support your through this process whilst ensuring you have full control over the contract.
+You will also need to configure your NFT contract to include the proxy as a Minter so that it is allowed to Mint tokens. If this is not done then your proxy will not be allowed to Mint tokens and complete the sale. Zilkroad will support your through this step, ensuring you have full control over the contract, whilst allowing the sales proxy to call Mint for an exchange of tokens.
+

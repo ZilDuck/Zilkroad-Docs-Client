@@ -39,4 +39,8 @@ Please use `collection_image_url` for the image associated with your NFT contrac
 }
 ```
 
-Your collection is now ready to be listed!
+Now your contract has an image and social media connected.
+
+<p align="center">
+  <img src="/img/features/metadata.png">
+</p>
