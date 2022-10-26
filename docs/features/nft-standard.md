@@ -25,13 +25,13 @@ If you have recently deployed a contract and have minted yourself tokens then zi
 If the ZRC-6 contract code is edited or modified it may become unusable with zilkroad, please ensure your contract does not have any standard warnings on viewblock.  
 
 <p align="center">
-  <img width="500" height="500" src="/img/features/broken_zrc6.png">
+  <img src="/img/features/broken_zrc6.png">
 </p>
 
 A valid contract will look like the below.
 
 <p align="center">
-  <img width="500" height="500" src="/img/features/valid_zrc6.png">
+  <img src="/img/features/valid_zrc6.png">
 </p>
 
 ### How do I get my ZRC-1 tradable on Zilkroad?
