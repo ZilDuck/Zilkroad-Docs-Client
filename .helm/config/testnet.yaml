@@ -3,4 +3,5 @@ namespace: zilkroad-testnet
 ingress:
   host: docs-testnet.zilkroad.io
 
-replicas: 1
+# testnet instance covers staging
+replicas: 0
