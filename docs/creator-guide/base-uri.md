@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: base_uri
+title: Mutable API - base_uri
 meta:
   - name: description
     content: How to mint a token using base_uri
