@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: token_uri
+title: Immutable onchain - token_uri
 meta:
   - name: description
     content: How to mint a token using token_uri
