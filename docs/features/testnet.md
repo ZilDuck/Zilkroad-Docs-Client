@@ -20,4 +20,4 @@ It is encouraged users deploy and mint tokens into testnet so they can see the a
 
 ### Testnet Client
 
-https://staging.zilkroad.io
+https://testnet.zilkroad.io
