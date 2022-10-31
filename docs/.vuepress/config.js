@@ -120,6 +120,7 @@ module.exports = {
               `/features/report`,
               `/features/royalties`,
               `/features/secondary-sales`,
+              `/features/testnet`,
               `/features/verified-collections`,
             ]
           },
@@ -128,6 +129,7 @@ module.exports = {
             path: '/creator-guide/',      
             sidebarDepth: 1,    
             children: [
+              `/creator-guide/introduction`,
               `/creator-guide/base-uri`,
               `/creator-guide/token-uri`,
               `/creator-guide/project-level-metadata`,

@@ -32,7 +32,7 @@ Please contact hello@zilkroad.io with the subject line \[Banner advertising\] wi
 | 7 days     | 1200 ZIL |
 | 28 days    | 4500 ZIL |
 
-If multiple advertisements are scheduled for a day then they are chosen in a round-robin pattern, equally distributing the views.
+If multiple advertisements are scheduled for a day then they are chosen in a round-robin pattern, equally distributing the views every 15 minutes.
 
 Advertising prices may change over time.
 
