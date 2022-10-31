@@ -1,0 +1,6 @@
+namespace: zilkroad-beta
+
+ingress:
+  host: docs-testnet.zilkroad.io
+
+replicas: 1
