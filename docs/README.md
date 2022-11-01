@@ -5,7 +5,7 @@ meta:
   - name: description
     content: Welcome to Zilkroad
   - name: keywords
-    content: Zilkroad Documentation Homepage Zilliqa
+    content: Zilkroad Documentation Homepage
 ---
 
 ## Welcome to Zilkroad
