@@ -29,7 +29,7 @@ The statistics of the buyer, seller, royalty recipient and collection are all up
 
 ## Primary Sales / Launchpad
 
-Primary sales allows NFT projects the ability to directly mint inistal sales through Zilkroad.
+Primary sales allows NFT projects the ability to directly mint initial sales through Zilkroad.
 
 Users have the ability to buy directly from the Zilkroad managed sales proxy and receive the NFT directly without leaving the site!
 
