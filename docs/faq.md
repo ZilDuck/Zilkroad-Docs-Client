@@ -101,7 +101,7 @@ We plan to increase this in the future.
 
 ## Is there a minimum listing amount for an item?
 
-The minimum amount of fungible tokens that can be processed for a sales is 10 units of a token. This is because this is the amount of units required to calculate royalty correctly.
+The minimum amount of fungible tokens that can be processed for a sale is 10 units of a token. This is because this is the amount of units required to calculate royalty correctly.
 
 ZIL and WZIL have 12 decimals, so 10 units would be equal to `0.000000000010`.
 
