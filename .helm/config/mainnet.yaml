@@ -1,3 +1,6 @@
-ingress.host: docs.zilkroad.io
+namespace: zilkroad-mainnet
+
+ingress:
+  host: docs.zilkroad.io
 
 replicas: 1
