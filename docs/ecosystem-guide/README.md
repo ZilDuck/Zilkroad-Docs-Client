@@ -20,8 +20,8 @@ The below examples follow on from this inital knowledge.
 
 | Contract Name    | Network    | Contract Address                           |
 |------------------|------------|--------------------------------------------|
-| Marketplace      | Mainnet    | Soon :tm:                                  |
-| NFT Escrow       | Mainnet    | Soon :tm:                                  |
+| Marketplace      | Mainnet    | 0x70b1f9e6a4d00baaf6972957f3b6a9f6c9f631b6 |
+| NFT Escrow       | Mainnet    | 0xe5a1250101c8e7b88eeff1924554cfddfa4a58be |
 | Launchpad Escrow | Mainnet    | Soon :tm:                                  |
 | Marketplace      | Testnet    | 0xad43392d1750771e58931801ddc274e5984660b4 |
 | NFT Escrow       | Testnet    | 0x8e7358f356fda73d450aed70dab7a93708b75650 |
